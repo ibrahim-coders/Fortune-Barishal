@@ -1,0 +1,104 @@
+{
+  "players": [
+    {
+      "playerId": 1,
+      "name": "Tamim Iqbal",
+      "country": "Fortune Barishal",
+      "image": "https://i.ibb.co/xjk3hCb/461950973-1344994773535099-698166838475669552-n.jpg",
+      "role": "Left Handed Bat",
+      "battingType": "Right-hand bat",
+      "bowlingType": "N/A",
+      "biddingPrice": 600000
+    },
+    {
+      "playerId": 2,
+      "name": "Mahmudullah Riyad",
+      "country": "Fortune Barishal",
+      "image": "https://i.ibb.co/dt0Y2Xk/462882604-1353994922635084-2717534986065874456-n.jpg",
+      "role": "Batsman",
+      "battingType": "Right-hand bat",
+      "bowlingType": "Right arm Offbreak",
+      "biddingPrice": 600000
+    },
+    {
+      "playerId": 3,
+      "name": "Towhid Hridoy",
+      "country": "Fortune Barishal",
+      "image": "https://i.ibb.co/bb0k0qW/462232701-1348669639834279-3933271163691972161-n.jpg",
+      "role": "Batsman",
+      "battingType": "Right hand Bat",
+      "bowlingType": "Right arm Offbreak",
+      "biddingPrice": 600000
+    },
+    {
+      "playerId": 4,
+      "name": "Mushfiqur Rahim",
+      "country": "Fortune Barishal",
+      "image": "https://i.ibb.co/1zHSqtR/428620210-1185902852777626-5042412718851612867-n.jpg",
+      "role": "Wicketkeeper",
+      "battingType": "Right hand Bat",
+      "bowlingType": "none",
+      "biddingPrice": 600000
+    },
+    {
+      "playerId": 5,
+      "name": "Rishad Hossain",
+      "country": "Fortune Barishal",
+      "image": "https://i.ibb.co/LvRs3Z1/462257636-1348669579834285-3820250216958600067-n.jpg",
+      "role": "All-rounder",
+      "battingType": "Right-hand bat",
+      "bowlingType": "Right-arm leg spin",
+      "biddingPrice": 2200000
+    },
+    {
+      "playerId": 6,
+      "name": "Jasprit Bumrah",
+      "country": "Fortune Barishal",
+      "image": "https://example.com/jasprit-bumrah.jpg",
+      "role": "Bowler",
+      "battingType": "Right-hand bat",
+      "bowlingType": "Legbreak Googly",
+      "biddingPrice": 600000
+    },
+    {
+      "playerId": 7,
+      "name": "Dawid MALAN",
+      "country": "Fortune Barishal",
+      "image": "https://i.ibb.co/N6QTDX3/462961560-1354897405878169-5971028759420810065-n.jpg",
+      "role": "Batsman",
+      "battingType": "Left-hand bat",
+      "bowlingType": "Right-arm leg spin",
+      "biddingPrice": 1900000
+    },
+    {
+      "playerId": 8,
+      "name": "Kyle Rico Mayers",
+      "country": "Fortune Barishal",
+      "image": "https://i.ibb.co/MgW7RJh/428600933-1190453295655915-2218417333408043460-n.jpg",
+      "role": "Batting Allrounder",
+      "battingType": "Right-hand bat",
+      "bowlingType": "Right arm Medium",
+      "biddingPrice": 2000000
+    },
+    {
+      "playerId": 9,
+      "name": "Ebadot Hossain",
+      "country": "Fortune Barishal",
+      "image": "https://i.ibb.co/yQycrLR/463010146-1355351935832716-2376356349282857209-n.jpg",
+      "role": "Bowler",
+      "battingType": "Left-hand bat",
+      "bowlingType": "Right-arm medium",
+      "biddingPrice": 2100000
+    },
+    {
+      "playerId": 10,
+      "name": "Nandre Burger",
+      "country": "Fortune Barishal",
+      "image": "https://i.ibb.co/BBDB8Gk/463015754-1355374372497139-4304337446728154095-n.jpg",
+      "role": "Bowler",
+      "battingType": "Right-hand bat",
+      "bowlingType": "Left-arm fast",
+      "biddingPrice": 2400000
+    }
+  ]
+}

@@ -22,13 +22,18 @@ function App() {
       });
     }
   };
-  console.log(activeBtn);
 
+  const [countIncrease, setIncrease] = useState(0);
+
+  const handelIncreasCoin = () => {
+    setIncrease(countIncrease + 60000000);
+  };
+  console.log(countIncrease);
   return (
     <>
       <div className="w-11/12 mx-auto">
-        <Header></Header>
-        <Banner></Banner>
+        <Header countIncrease={countIncrease}></Header>
+        <Banner handelIncreasCoin={handelIncreasCoin}></Banner>
         <AllPlayers
           handleButtonClick={handleButtonClick}
           activeBtn={activeBtn}

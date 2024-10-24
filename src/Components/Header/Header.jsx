@@ -1,7 +1,9 @@
 import { useState } from 'react';
+import { BsCoin } from 'react-icons/bs';
 import logo from '../../Image/logo.png';
 
-const Header = () => {
+const Header = ({ countIncrease }) => {
+  console.log(countIncrease);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -56,8 +58,8 @@ const Header = () => {
               </li>
             </ul>
 
-            <button className="px-6 py-3 bg-orange-600 text-black font-semibold rounded-lg shadow-md hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-400 focus:ring-opacity-75 transition duration-300">
-              0 Coin
+            <button className="px-6 py-3 bg-gray-300 text-xl text-black rounded-lg font-semibold shadow-md flex gap-2 items-center">
+              {countIncrease} Coin <BsCoin />
             </button>
 
             {/* Hamburger Menu (Mobile) */}
@@ -89,7 +91,7 @@ const Header = () => {
         {isMobileMenuOpen && (
           <ul
             id="mobile-menu"
-            className="lg:hidden absolute top-20 left-0 w-full bg-white shadow-md flex-col items-center space-y-4 py-4 "
+            className="lg:hidden absolute top-20 left-0 w-full h-auto bg-white shadow-md flex-col items-center space-y-4 py-4 "
           >
             <li>
               <a
