@@ -25,14 +25,23 @@ function App() {
   };
 
   const [countIncrease, setIncrease] = useState(0);
-  // const [price, setPrice] = useState();
+
   const handelIncreasCoin = () => {
-    setIncrease(countIncrease + 100000000);
+    setIncrease(countIncrease + 800000);
   };
 
-  const handelRemanigCoin = coin => {
-    setIncrease(setIncrease - coin);
+  const [price, setPrice] = useState([]);
+
+  const handelRemanigCoin = pr => {
+    if (countIncrease >= pr) {
+      setPrice(pr);
+      setIncrease(countIncrease - pr);
+    } else {
+      alert('Not enough coins!');
+    }
   };
+
+  console.log(price);
   const [countPlayers, setPlayers] = useState([]);
 
   useEffect(() => {
@@ -49,23 +58,24 @@ function App() {
     if (playerExists) {
       alert('Player is already selected');
     } else {
-      handelRemanigCoin(player.coin);
+      handelRemanigCoin(player.biddingPrice);
+      handleRemovePlayer(player.biddingPrice);
       const newPlayers = [...selectedPlayers, player];
       setSelectedPlayers(newPlayers);
     }
   };
+  // const [count, setsum] = useState([]);
 
-  console.log(selectedPlayers);
-
-  const handleRemovePlayer = id => {
+  const handleRemovePlayer = (id, coinsum) => {
     const removes = selectedPlayers.filter(remove => remove.id != id);
     setSelectedPlayers(removes);
+    // setIncrease(countIncrease + coinsum);
   };
 
   return (
     <>
       <div className="max-w-screen-xl container w-11/12 mx-auto"> </div>
-      <Header countIncrease={countIncrease}></Header>
+      <Header countIncrease={countIncrease} price={price}></Header>
       <Banner handelIncreasCoin={handelIncreasCoin}></Banner>
 
       <AllPlayers
