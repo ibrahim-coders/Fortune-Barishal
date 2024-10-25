@@ -1,9 +1,8 @@
 import { useState } from 'react';
 import { BsCoin } from 'react-icons/bs';
 import logo from '../../Image/logo.png';
-
+import PropTypes from 'prop-types';
 const Header = ({ countIncrease }) => {
-  console.log(countIncrease);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -131,6 +130,10 @@ const Header = ({ countIncrease }) => {
       {/* End Navbar */}
     </>
   );
+};
+
+Header.propTypes = {
+  countIncrease: PropTypes.array,
 };
 
 export default Header;
