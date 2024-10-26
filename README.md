@@ -1,8 +1,16 @@
-# React + Vite
+Fortune Barishal BPL League 2024
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+📜 Description Fortune Barishal BPL League 2024 is a dedicated web-based
+platform for fans to stay updated on the latest Fortune Barishal team highlights
+in the 2024 Bangladesh Premier League. With real-time updates, live player
+stats, and match details, this project delivers a fan-centric experience with a
+sleek, responsive interface.
 
-Currently, two official plugins are available:
+💻 Technologies Used Frontend: React, Tailwind CSS UI Notifications:
+React-Toastify
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🌟 Key Features Real-Time Updates: Get live scores and player stats, ensuring
+fans are always in sync with the latest match developments. Integration with
+Peddy API: Displays dynamic data on players, teams, and matches, providing a
+rich interactive experience. Responsive UI Design: Optimized for mobile and
+desktop, with smooth animations and dynamic sorting to enhance usability.

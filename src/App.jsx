@@ -1,3 +1,5 @@
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Header from './Components/Header/Header';
 import Banner from './Components/Banner/Banner';
 import AllPlayers from './Components/Players/AllPlayers';
@@ -24,20 +26,29 @@ function App() {
     }
   };
 
+  // increase coins
   const [countIncrease, setIncrease] = useState(0);
 
   const handelIncreasCoin = () => {
-    setIncrease(countIncrease + 800000);
+    const newCount = countIncrease + 5000;
+    setIncrease(newCount);
+    toast.success(
+      `Congratulations! You have received 5000 coins! Total coins: ${newCount}`
+    );
   };
 
-  const [price, setPrice] = useState([]);
+  // Remaining coin and price
+  const [price, setPrice] = useState(0);
 
-  const handelRemanigCoin = pr => {
-    if (countIncrease >= pr) {
-      setPrice(pr);
-      setIncrease(countIncrease - pr);
+  const handelRemanigCoin = playerPrice => {
+    if (countIncrease >= playerPrice) {
+      setPrice(playerPrice);
+
+      setIncrease(countIncrease - playerPrice);
+      return true;
     } else {
-      alert('Not enough coins!');
+      toast.error('Not enough coins!');
+      return false;
     }
   };
 
@@ -52,29 +63,48 @@ function App() {
 
   const [selectedPlayers, setSelectedPlayers] = useState([]);
 
+  //choose Players
   const handleChoosePlayers = player => {
     const playerExists = selectedPlayers.find(p => p.id === player.id);
 
     if (playerExists) {
-      alert('Player is already selected');
+      toast.warn('Player is already selected');
+    } else if (countIncrease <= player.biddingPrice) {
+      toast.error('You do not have enough coins!');
+    } else if (selectedPlayers.length >= 6) {
+      toast.error('You can only select up to 6 players!');
     } else {
       handelRemanigCoin(player.biddingPrice);
-      handleRemovePlayer(player.biddingPrice);
+      toast.success(
+        `Congratulations! ${player.name} has been added to your team!`
+      );
       const newPlayers = [...selectedPlayers, player];
       setSelectedPlayers(newPlayers);
     }
   };
-  // const [count, setsum] = useState([]);
-
-  const handleRemovePlayer = (id, coinsum) => {
+  //delete players
+  const handleRemovePlayer = id => {
+    handleSumPrice(id);
     const removes = selectedPlayers.filter(remove => remove.id != id);
+    toast.success(
+      `Congratulations! ${removes.name} has been removed from your team!`
+    );
     setSelectedPlayers(removes);
-    // setIncrease(countIncrease + coinsum);
   };
 
+  const handleSumPrice = id => {
+    const playerToRemove = selectedPlayers.find(p => p.id === id);
+
+    setIncrease(playerToRemove.biddingPrice + price);
+  };
+
+  const addMorePlers = () => {
+    setButton({ btn: true });
+  };
   return (
     <>
       <div className="max-w-screen-xl container w-11/12 mx-auto"> </div>
+      <ToastContainer position="top-center" autoClose={3000} />
       <Header countIncrease={countIncrease} price={price}></Header>
       <Banner handelIncreasCoin={handelIncreasCoin}></Banner>
 
@@ -85,9 +115,10 @@ function App() {
         handleChoosePlayers={handleChoosePlayers}
         selectedPlayers={selectedPlayers}
         handleRemovePlayer={handleRemovePlayer}
+        addMorePlers={addMorePlers}
       ></AllPlayers>
 
-      {/* <Footer></Footer> */}
+      <Footer></Footer>
     </>
   );
 }

@@ -11,8 +11,8 @@ const Banner = ({ handelIncreasCoin }) => {
         alt="Background"
       />
 
-      <div className="absolute top-4 md:top-20 left-1/2 transform -translate-x-1/2 text-center  w-full px-4 h-full pb-6">
-        <div className="w-10 sm:w-16 md:w-24 mx-auto my-4">
+      <div className="absolute top-4 md:top-14 lg:top-20 left-1/2 transform -translate-x-1/2 text-center  w-full px-4 h-full pb-6">
+        <div className="w-10 mt-2 sm:w-16 md:w-24 mx-auto my-4">
           <img className="w-full" src={bannerLogo} alt="Banner Logo" />
         </div>
 
@@ -28,7 +28,7 @@ const Banner = ({ handelIncreasCoin }) => {
         <div className="border border-orange-300 rounded-lg py-2 w-44 mx-auto focus:outline-none focus:ring-2 focus:ring-orange-400 focus:ring-opacity-75 transition duration-300">
           <button
             onClick={handelIncreasCoin}
-            className="px-6 py-3 text-sm bg-orange-600 font-medium text-black rounded-lg shadow-md hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-400 focus:ring-opacity-75 transition duration-300"
+            className="px-6 py-2 text-sm bg-orange-600 font-medium text-black rounded-lg shadow-md hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-400 focus:ring-opacity-75 transition duration-300"
           >
             Claim Free Credit
           </button>

@@ -8,6 +8,7 @@ const AllPlayers = ({
   handleChoosePlayers,
   selectedPlayers,
   handleRemovePlayer,
+  addMorePlers,
 }) => {
   return (
     <div className="">
@@ -24,16 +25,16 @@ const AllPlayers = ({
         <div className="flex rounded-xl">
           <button
             onClick={() => handleButtonClick('available')}
-            className={`text-base  p-2 md:p-4  ${
-              activeBtn.btn ? 'bg-orange-500 text-white' : 'bg-gray-300'
+            className={`text-base rounded-l-md p-2 md:p-4  ${
+              activeBtn.btn ? 'bg-orange-500 text-white ' : 'bg-gray-300'
             }`}
           >
             Available
           </button>
           <button
             onClick={() => handleButtonClick('selected')}
-            className={`text-base  p-2 md:p-4 ${
-              activeBtn.btn ? 'bg-gray-300' : 'bg-orange-500 text-white'
+            className={`text-base rounded-r-md p-2 md:p-4 ${
+              activeBtn.btn ? 'bg-gray-300 ' : 'bg-orange-500 text-white'
             }`}
           >
             Selected ({selectedPlayers.length})
@@ -42,7 +43,7 @@ const AllPlayers = ({
       </div>
 
       {activeBtn.btn ? (
-        <div className="max-w-screen-xl container w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center gap-4">
+        <div className="max-w-screen-xl container w-11/12 mx-auto grid grid-cols-1 sm:pb-0 md:grid-cols-2 md:pb-10 lg:grid-cols-3 items-center gap-4">
           {countPlayers.map(players => (
             <Players
               key={players.playerId}
@@ -55,6 +56,7 @@ const AllPlayers = ({
         <Selectors
           selectedPlayers={selectedPlayers}
           handleRemovePlayer={handleRemovePlayer}
+          addMorePlers={addMorePlers}
         ></Selectors>
       )}
     </div>
@@ -69,5 +71,6 @@ AllPlayers.propTypes = {
   handelChooesPlyers: PropTypes.func,
   selectedPlayers: PropTypes.array,
   handleRemovePlayer: PropTypes.func,
+  addMorePlers: PropTypes.func,
 };
 export default AllPlayers;

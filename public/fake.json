@@ -9,7 +9,7 @@
       "role": "Batsman",
       "battingType": "Right-hand bat",
       "bowlingType": "N/A",
-      "biddingPrice": 60000
+      "biddingPrice": 1000
     },
     {
       "id": 2,
@@ -20,7 +20,7 @@
       "role": "Batsman",
       "battingType": "Right-hand bat",
       "bowlingType": "Right arm Offbreak",
-      "biddingPrice": 60000
+      "biddingPrice": 1000
     },
     {
       "id": 3,
@@ -31,7 +31,7 @@
       "role": "Batsman",
       "battingType": "Right hand Bat",
       "bowlingType": "Right arm Offbreak",
-      "biddingPrice": 60000
+      "biddingPrice": 1000
     },
     {
       "id": 4,
@@ -42,7 +42,7 @@
       "role": "Wicketkeeper",
       "battingType": "Right hand Bat",
       "bowlingType": "none",
-      "biddingPrice": 60000
+      "biddingPrice": 1000
     },
     {
       "id": 5,
@@ -53,7 +53,7 @@
       "role": "All-rounder",
       "battingType": "Right-hand bat",
       "bowlingType": "Right-arm leg spin",
-      "biddingPrice": 220000
+      "biddingPrice": 1000
     },
     {
       "id": 6,
@@ -64,7 +64,7 @@
       "role": "Batsman",
       "battingType": "Right-hand bat",
       "bowlingType": "None",
-      "biddingPrice": 60000
+      "biddingPrice": 1000
     },
     {
       "id": 7,
@@ -75,7 +75,7 @@
       "role": "Batsman",
       "battingType": "Left-hand bat",
       "bowlingType": "Right-arm leg spin",
-      "biddingPrice": 190000
+      "biddingPrice": 1000
     },
     {
       "id": 8,
@@ -86,7 +86,7 @@
       "role": "Batting Allrounder",
       "battingType": "Right-hand bat",
       "bowlingType": "Right arm Medium",
-      "biddingPrice": 200000
+      "biddingPrice": 1000
     },
     {
       "id": 9,
@@ -97,7 +97,40 @@
       "role": "Bowler",
       "battingType": "Left-hand bat",
       "bowlingType": "Right-arm medium",
-      "biddingPrice": 210000
+      "biddingPrice": 1000
+    },
+    {
+      "id": 10,
+      "playerId": 10,
+      "name": "Taijul Islam",
+      "country": "F Barishal",
+      "image": "https://i.ibb.co/R90m1J1/464381460-1364109618290281-1756717979252328286-n.jpg",
+      "role": "Bowler",
+      "battingType": "Left-hand bat",
+      "bowlingType": "Right-arm leg spin",
+      "biddingPrice": 1000
+    },
+    {
+      "id": 11,
+      "playerId": 11,
+      "name": "Dawid MALAN",
+      "country": "F Barishal",
+      "image": "https://i.ibb.co/BBDB8Gk/463015754-1355374372497139-4304337446728154095-n.jpg",
+      "role": "Batsman",
+      "battingType": "Left-hand bat",
+      "bowlingType": "Right-arm leg spin",
+      "biddingPrice": 1000
+    },
+    {
+      "id": 12,
+      "playerId": 12,
+      "name": "Dawid MALAN",
+      "country": "F Barishal",
+      "image": "https://i.ibb.co/N6QTDX3/462961560-1354897405878169-5971028759420810065-n.jpg",
+      "role": "Batsman",
+      "battingType": "Left-hand bat",
+      "bowlingType": "Right-arm leg spin",
+      "biddingPrice": 1000
     }
   ]
 }

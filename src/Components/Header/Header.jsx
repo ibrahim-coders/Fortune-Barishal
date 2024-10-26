@@ -12,7 +12,7 @@ const Header = ({ countIncrease }) => {
   return (
     <>
       {/* Header */}
-      <header className="max-w-screen-xl container w-11/12 mx-auto py-6">
+      <header className="max-w-screen-xl container w-11/12 mx-auto py-6 sticky top-0 z-10 backdrop-blur-md opacity-80">
         <nav className="flex items-center justify-between">
           {/* Logo and Title */}
           <div className="flex items-center space-x-3">
@@ -25,7 +25,7 @@ const Header = ({ countIncrease }) => {
               <li>
                 <a
                   href="#"
-                  className="text-xl font-semibold hover:text-green-500"
+                  className="text-xl text-red-700 font-semibold hover:text-green-500"
                 >
                   Home
                 </a>
@@ -33,7 +33,7 @@ const Header = ({ countIncrease }) => {
               <li>
                 <a
                   href="#"
-                  className="text-xl font-semibold hover:text-green-500"
+                  className="text-xl text-red-700 font-semibold hover:text-green-500"
                 >
                   Fixtire
                 </a>
@@ -41,7 +41,7 @@ const Header = ({ countIncrease }) => {
               <li>
                 <a
                   href="#"
-                  className="text-xl font-semibold hover:text-green-500"
+                  className="text-xl text-red-700 font-semibold hover:text-green-500"
                 >
                   Teams
                 </a>
@@ -50,22 +50,22 @@ const Header = ({ countIncrease }) => {
               <li>
                 <a
                   href="#"
-                  className="text-xl font-semibold hover:text-green-500"
+                  className="text-xl text-red-700 font-semibold hover:text-green-500"
                 >
                   Schedules
                 </a>
               </li>
             </ul>
 
-            <button className="px-6 py-3 bg-gray-300 text-xl text-black rounded-lg font-semibold shadow-md flex gap-2 items-center">
-              {countIncrease} Coin <BsCoin />
+            <button className="px-6 py-3 text-white bg-orange-800 text-xl  rounded-lg font-semibold shadow-md flex gap-2 items-center">
+              {countIncrease} Coin <BsCoin className="text-white" />
             </button>
 
             {/* Hamburger Menu (Mobile) */}
             <div className="lg:hidden">
               <button
                 onClick={toggleMobileMenu}
-                className="text-gray-700 focus:outline-none"
+                className="text-red-700 focus:outline-none"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +95,7 @@ const Header = ({ countIncrease }) => {
             <li>
               <a
                 href="#"
-                className="text-xl font-semibold block text-center hover:text-blue-500"
+                className="text-xl text-red-700 font-semibold block text-center hover:text-blue-500"
               >
                 Home
               </a>
@@ -103,7 +103,7 @@ const Header = ({ countIncrease }) => {
             <li>
               <a
                 href="#"
-                className="text-xl font-semibold block text-center hover:text-blue-500"
+                className="text-xl text-red-700 font-semibold block text-center hover:text-blue-500"
               >
                 Fixtire
               </a>
@@ -111,7 +111,7 @@ const Header = ({ countIncrease }) => {
             <li>
               <a
                 href="#"
-                className="text-xl font-semibold block text-center hover:text-blue-500"
+                className="text-xl text-red-700 font-semibold block text-center hover:text-blue-500"
               >
                 Teams
               </a>
@@ -119,7 +119,7 @@ const Header = ({ countIncrease }) => {
             <li>
               <a
                 href="#"
-                className="text-xl font-semibold block text-center hover:text-blue-500"
+                className="text-xl text-red-700 font-semibold block text-center hover:text-blue-500"
               >
                 Schedules
               </a>

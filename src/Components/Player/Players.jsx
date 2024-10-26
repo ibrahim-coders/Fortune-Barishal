@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import { FaFlag } from 'react-icons/fa';
-
 const Players = ({ players, handleChoosePlayers }) => {
   const {
     battingType,
@@ -47,16 +46,12 @@ const Players = ({ players, handleChoosePlayers }) => {
 
           <h2 className="text-gray-800 text-lg font-semibold mb-2">Rating</h2>
           <div className="flex justify-between gap-4 ">
-            <h2 className="text-gray-800  font-semibold text-xl">
-              {battingType}
-            </h2>
-            <h2 className="text-gray-400 text-md font-semibold">
-              {bowlingType}
-            </h2>
+            <h2 className="text-gray-800  text-xl">{battingType}</h2>
+            <h2 className="text-gray-400 text-md">{bowlingType}</h2>
           </div>
           <div className="flex justify-between items-center  py-2 bg-white">
-            <h2 className="text-gray-800 font-semibold text-lg md:text-xl">
-              Price: {biddingPrice}
+            <h2 className="text-gray-800 font-medium text-xl md:text-xl">
+              Price:$ {biddingPrice}
             </h2>
             <button
               onClick={() => handleChoosePlayers(players)}
